@@ -1,0 +1,51 @@
+@layer base {
+  @font-face {
+    font-family: 'Halis GR';
+    src: url('../assets/fonts/HalisGR-Medium.eot');
+    src: url('../assets/fonts/HalisGR-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/HalisGR-Medium.woff2') format('woff2'),
+      url('../assets/fonts/HalisGR-Medium.woff') format('woff'),
+      url('../assets/fonts/HalisGR-Medium.ttf') format('truetype'),
+      url('../assets/fonts/HalisGR-Medium.svg#HalisGR-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Halis GR';
+    src: url('../assets/fonts/HalisGR-Regular.eot');
+    src: url('../assets/fonts/HalisGR-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/HalisGR-Regular.woff2') format('woff2'),
+      url('../assets/fonts/HalisGR-Regular.woff') format('woff'),
+      url('../assets/fonts/HalisGR-Regular.ttf') format('truetype'),
+      url('../assets/fonts/HalisGR-Regular.svg#HalisGR-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --primary: #008C99;
+    --footer-bg: #0F172A;
+    --head-color: #344170;
+    --bg-bluebtn: #87CEEB;
+    --gradient-custom:linear-gradient(90deg, rgba(255,220,131,1) 0%, rgba(237,255,255,1) 25%, rgba(130,202,255,1) 88%);
+
+  }
+  .dark{
+    --primary: rgb(14, 46, 115);
+    --bg-bluebtn: #000435;
+    --gradient-custom:linear-gradient(90deg, rgb(211, 134, 72) 0%, rgb(142, 94, 196) 25%, rgb(57, 113, 109) 88%);
+  }
+  .cool{
+    --primary: #989ee0;
+    --bg-bluebtn: #989ee0;
+    --gradient-custom:linear-gradient(90deg, rgb(193, 207, 90) 0%, rgb(187, 130, 159) 25%, rgb(123, 64, 86) 88%);
+
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
