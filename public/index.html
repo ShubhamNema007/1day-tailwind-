@@ -8,42 +8,60 @@
     <title>The Social Questions</title>
     <link rel="stylesheet" href="./output.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5a43634f6.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body class="font-default">
-    <main class="bg-hero-pattern pt-8 pb-8 lg:pb-6 2xl:pb-24 ">
-        <div class="container m-auto">
-            <div class="flex justify-between flex-col lg:flex-row 2xl:flex-row gap-2">
-                <img src="../assets/Images/thesocialicon.svg" alt="header-img">
-                <div class="flex gap-4">
-                    <a href="#">
-                        <button
-                            class="bg-primary text-white hover:bg-slate-500 transition-[0.3s] py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 rounded-[5px]">
-                            Back to TSQ.com
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button id="dark-mode-toggle" class="py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 bg-gray-600 text-white rounded-[5px] hover:bg-blue-900 transition-[0.3s]">
-                            Dark
-                        </button>
-                    </a>
-                   <a href="#">
-                    <button id="cool-mode-toggle" class="py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 bg-gray-600 text-white rounded-[5px] hover:bg-blue-900 transition-[0.3s]">
-                        Cool
-                    </button>
-                   </a>
+    <main class="bg-hero-pattern pb-8 lg:pb-6 2xl:pb-24 ">
+        <header class="pt-4">
+            <div class="container m-auto">
+                <div class="flex justify-between items-center 2xl:items-start flex-col lg:flex-row 2xl:flex-row gap-2">
+                    <img src="../assets/Images/thesocialicon.svg" alt="header-img">
+                    <div class="flex gap-4 items-center">
+                        <a href="#">
+                            <button
+                                class="bg-primary text-white hover:bg-slate-500 transition-[0.3s] py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 rounded-[5px]">
+                                Back to TSQ.com
+                            </button>
+                        </a>
+                        <!-- <div class="dark-icon">
+                            <button class="theme-btn light">
+                                <i id="dark-mode-toggle" class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+                            </button>
+                            <button class="theme-btn dark">
+                                <i id="dark-mode-toggle" class="fa-regular fa-moon  fa-2xl"></i>
+                            </button>
+                        </div> -->
+                        <a href="#">
+                            <button id="dark-mode-toggle" class="py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 bg-gray-600 text-white rounded-[5px] hover:bg-blue-900 transition-[0.3s]">
+                                Dark
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button id="cool-mode-toggle"
+                                class="py-2 px-2 lg:py-4 lg:px-5 2xl:py-4 2xl:px-5 bg-gray-600 text-white rounded-[5px] hover:bg-blue-900 transition-[0.3s]">
+                                Cool
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </header>
+        <div class="container m-auto">
+
             <div class="flex justify-between items-center flex-col-reverse lg:flex-row 2xl:flex-row">
                 <div class="">
-                    <h3 class="text-headcolor text-[28px] lg:text-[34px] 2xl:text-[55px] font-medium leading-[68px] 2xl:mb-[30px]">
+                    <h3
+                        class="text-headcolor text-[28px] lg:text-[34px] 2xl:text-[55px] font-medium leading-[68px] 2xl:mb-[30px]">
                         The Social Question
                     </h3>
-                    <p class="text-headcolor text-sm lg:text-lg 2xl:text-[22px] leading-8 mb-3 2xl:mb-11">Transcribe Your Instagram Q&A Response
+                    <p class="text-headcolor text-sm lg:text-lg 2xl:text-[22px] leading-8 mb-3 2xl:mb-11">Transcribe
+                        Your Instagram Q&A Response
                         Stickers</p>
                     <a href="#">
-                        <button class="p-2 lg:p-4 2xl:p-4 bg-primary text-white font-bold leading-6 text-[12px] lg:text-[16px] 2xl:text-[16px] rounded-[5px] hover:bg-slate-500 transition-[0.3s]">Sign
+                        <button
+                            class="p-2 lg:p-4 2xl:p-4 bg-primary text-white font-bold leading-6 text-[12px] lg:text-[16px] 2xl:text-[16px] rounded-[5px] hover:bg-slate-500 transition-[0.3s]">Sign
                             Up</button>
                     </a>
                 </div>
@@ -54,7 +72,7 @@
         </div>
     </main>
     <section
-        class="flex justify-between container flex-col items-center 2xl:items-start 2xl:flex-row m-auto pt-[115px] pb-[89px]">
+        class="flex justify-between container flex-col items-center 2xl:items-start 2xl:flex-row m-auto px-[10px] lg:px-0 2xl:px-0 pt-[115px] pb-[89px]">
         <img src="../assets/Images/nextgenrationimage.svg" alt="laptop-img">
         <div class="2xl:ml-[107px] text-center 2xl:text-start">
             <h3 class="max-w-[511px] text-[42px] pb-9 text-headcolor font-medium">
@@ -71,15 +89,17 @@
                 with Question Hosts to take your engagement to the next level.
             </p>
             <a href="#" class="">
-                <button class="max-w-[254px] bg-primary text-white py-4 px-5 font-medium mt-9 rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
+                <button
+                    class="max-w-[254px] bg-primary text-white py-4 px-5 font-medium mt-9 rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
                     Learn More: Question Hosts
                 </button>
             </a>
         </div>
     </section>
-    <section class="bg-hero-pattern pt-[97px] pb-[103px]">
+    <section class="bg-hero-pattern px-[10px] lg:px-0 2xl:px-0 pt-[97px] pb-[103px]">
         <div class="container mx-auto my-0">
-            <h3 class="font-medium text-2xl lg:text-[42px] 2xl:text-[42px] text-center">How the Transcription Tool Works
+            <h3 class="font-medium text-2xl lg:text-[42px] 2xl:text-[42px] text-center text-gradient">How the
+                Transcription Tool Works
             </h3>
             <div class="flex flex-col lg:flex-row 2xl:flex-row justify-center lg:gap-[40px] 2xl:gap-[80px] pt-[78px]">
                 <div class="cards flex justify-center items-center flex-col">
@@ -112,10 +132,11 @@
             </div>
         </div>
     </section>
-    <section class="py-[98px]">
+    <section class="px-[10px] lg:px-0 2xl:px-0 py-[98px]">
         <div class="container my-0 mx-auto">
-            <h3 class="text-center text-[42px] font-medium">Additional Service</h3>
-            <div class="flex flex-col lg:flex-row 2xl:flex-row lg:gap-[40px] 2xl:gap-[80px] pt-[63px] justify-center">
+            <h3 class="text-center text-[42px] font-medium text-gradient">Additional Service</h3>
+            <div
+                class="flex flex-col items-center lg:items-start 2xl:items-start lg:flex-row 2xl:flex-row gap-5 lg:gap-[40px] 2xl:gap-[80px] pt-[63px] justify-center">
                 <div class="cards flex justify-center flex-col shadow-cardshadow w-96 rounded-[12px]">
                     <img src="../assets/Images/mobileimg.svg" alt="card-img" class="rounded-t-[12px]">
                     <div class="ml-5">
@@ -128,7 +149,8 @@
                             to make a more meaningful connection? We offer consulting and analytic services to improve
                             your Instagram Stories presence and content creation.
                         </p>
-                        <button class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
+                        <button
+                            class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
                             Contact
                         </button>
                     </div>
@@ -144,7 +166,8 @@
                             to make a more meaningful connection? We offer consulting and analytic services to improve
                             your Instagram Stories presence and content creation.
                         </p>
-                        <button class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
+                        <button
+                            class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
                             Contact
                         </button>
                     </div>
@@ -160,7 +183,8 @@
                             to make a more meaningful connection? We offer consulting and analytic services to improve
                             your Instagram Stories presence and content creation.
                         </p>
-                        <button class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
+                        <button
+                            class="mt-[30px] mb-5 py-4 px-5 bg-primary text-white rounded-[5px] hover:bg-slate-500 transition-[0.3s]">
                             Contact
                         </button>
                     </div>
@@ -214,6 +238,14 @@
             bodyElement.classList.toggle('cool');
         } else {
             bodyElement.classList.toggle('cool');
+        }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1) {
+            $('header').addClass("header-fixed");
+        }
+        else {
+            $('header').removeClass("header-fixed");
         }
     });
 </script>

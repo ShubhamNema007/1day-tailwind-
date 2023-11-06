@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   @font-face {
     font-family: 'Halis GR';
@@ -30,22 +34,63 @@
     --footer-bg: #0F172A;
     --head-color: #344170;
     --bg-bluebtn: #87CEEB;
-    --gradient-custom:linear-gradient(90deg, rgba(255,220,131,1) 0%, rgba(237,255,255,1) 25%, rgba(130,202,255,1) 88%);
-
+    --gradient-custom: linear-gradient(90deg, rgba(255, 220, 131, 1) 0%, rgba(237, 255, 255, 1) 25%, rgba(130, 202, 255, 1) 88%);
+    --gradient-font: linear-gradient(90deg, rgb(68, 118, 169) 0%, rgb(181, 86, 193) 25%, rgb(219, 215, 136) 88%);
   }
-  .dark{
+
+  .dark {
     --primary: rgb(14, 46, 115);
     --bg-bluebtn: #000435;
-    --gradient-custom:linear-gradient(90deg, rgb(211, 134, 72) 0%, rgb(142, 94, 196) 25%, rgb(57, 113, 109) 88%);
+    --gradient-custom: linear-gradient(90deg, rgb(211, 134, 72) 0%, rgb(142, 94, 196) 25%, rgb(57, 113, 109) 88%);
+    --gradient-font: linear-gradient(90deg, #000435 0%, rgb(241 144 144) 25%, rgb(12 13 98) 88%);
   }
-  .cool{
+
+  .cool {
     --primary: #989ee0;
     --bg-bluebtn: #989ee0;
-    --gradient-custom:linear-gradient(90deg, rgb(193, 207, 90) 0%, rgb(187, 130, 159) 25%, rgb(123, 64, 86) 88%);
-
+    --gradient-custom: linear-gradient(90deg, rgb(193, 207, 90) 0%, rgb(187, 130, 159) 25%, rgb(123, 64, 86) 88%);
+    --gradient-font: linear-gradient(90deg, rgb(104, 117, 131) 0%, rgb(229, 168, 237) 25%, rgb(237, 205, 154) 88%);
   }
-}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-font-gradient;
+  }
+
+  .header-fixed {
+    @apply fixed w-full bg-hero-pattern animate-smoothScroll z-[999] border-b-4 border-primary;
+  }
+  .dark-icon{
+    @apply relative;
+  }
+  .theme-btn{
+    @apply bg-transparent;
+  }
+  .theme-btn .light{
+    @apply hidden;
+  }
+  .dark .theme-btn.dark {
+    @apply hidden;
+  } 
+  .dark .theme-btn.light {
+    @apply block;
+  }
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    @apply w-[10px];
+  }
+
+  *::-webkit-scrollbar-track {
+   @apply bg-white;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-[#8f54a0] rounded-lg border-[3px] border-solid border-white;
+  }
+
+}

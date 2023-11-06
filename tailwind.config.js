@@ -22,11 +22,20 @@ module.exports = {
         cardshadow: "0px 4px 80px 0px rgba(0, 0, 0, 0.07)",
         
       },
+      animation: {
+        smoothScroll: 'smoothScroll 0.5s forwards;'
+      },
+      keyframes: {
+        smoothScroll: {
+          '0%': { transform: 'translateY(-40px)' },
+          '100%': { transform: ' translateY(0px)' },
+        },
+      },
       backgroundImage: {
         'hero-pattern': "var(--gradient-custom)",
+        'font-gradient': "var(--gradient-font)",
       }
     },
   },
-  plugins: [],
 }
 
